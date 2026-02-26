@@ -712,3 +712,45 @@ body {
         text-align: center;
     }
 }
+/* --- Naya Code Jo Aapko Last Mein Daalna Hai --- */
+
+body {
+    overflow-y: auto !important; /* Scroll chalu karne ke liye */
+    overflow-x: hidden;
+}
+
+#bg-video {
+    position: absolute !important; /* Video ko sirf home page tak rakhne ke liye */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-layout {
+    position: relative; /* Video ko iske andar lock karne ke liye */
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* Phone ke liye ek jaisa dikhne wala code */
+@media (max-width: 768px) {
+    .hero-layout {
+        flex-direction: column;
+        padding-top: 140px;
+        text-align: center;
+    }
+    
+    .hero-right {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
