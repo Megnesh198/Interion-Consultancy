@@ -1224,6 +1224,3 @@ body { background-color: #1a1a1a; font-family: sans-serif; }
             .service-card, .service-card:nth-child(even) { flex-direction: column; text-align: center; }
             .footer-section { flex-direction: column; gap: 20px; align-items: center; }
         }
-
-        
-
